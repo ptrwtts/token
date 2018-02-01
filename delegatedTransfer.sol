@@ -1,3 +1,5 @@
+pragma solidity ^0.4.18;
+
 function delegatedTransfer(uint256 _nonce, address _from, address _to, uint256 _value, uint256 _fee, uint8 _v, bytes32 _r, bytes32 _s) public returns (bool) {
      uint256 total = _value.add(_fee);
      require(_from != address(0));
